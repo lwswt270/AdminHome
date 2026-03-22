@@ -9,7 +9,6 @@
         <img src="https://avatars.githubusercontent.com/u/27804424?s=400&u=7a5cb55dcbe50f3f7e949348f79b94af8be8bee1&v=4" alt="avatar" />
       </div>
       <h1 class="name">AdminHome</h1>
-      <p class="tagline">一个简单的个人空间</p>
       <p class="desc">
         这里记录日常、分享想法与项目。<br>
         欢迎来访，随意逛逛。
@@ -68,7 +67,7 @@ body {
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 24px;
-  padding: 48px 44px;
+  padding: 40px 44px;
   width: 100%;
   max-width: 420px;
   text-align: center;
@@ -81,7 +80,7 @@ body {
   border-radius: 50%;
   border: 3px solid rgba(255, 255, 255, 0.6);
   overflow: hidden;
-  margin: 0 auto 20px;
+  margin: 0 auto 18px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -96,14 +95,8 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 6px;
+  margin-bottom: 18px;
   letter-spacing: 0.5px;
-}
-
-.tagline {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 20px;
 }
 
 .desc {
