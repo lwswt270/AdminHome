@@ -1,12 +1,13 @@
 <template>
   <div class="page">
-    <!-- 背景装饰圆 -->
     <div class="bg-circle c1"></div>
     <div class="bg-circle c2"></div>
     <div class="bg-circle c3"></div>
 
     <div class="glass-card">
-      <div class="avatar">L</div>
+      <div class="avatar">
+        <img src="https://avatars.githubusercontent.com/u/27804424?s=400&u=7a5cb55dcbe50f3f7e949348f79b94af8be8bee1&v=4" alt="avatar" />
+      </div>
       <h1 class="name">AdminHome</h1>
       <p class="tagline">一个简单的个人空间</p>
       <p class="desc">
@@ -49,7 +50,6 @@ body {
   position: relative;
 }
 
-/* 背景装饰圆 */
 .bg-circle {
   position: absolute;
   border-radius: 50%;
@@ -57,23 +57,10 @@ body {
   filter: blur(60px);
   pointer-events: none;
 }
-.c1 {
-  width: 400px; height: 400px;
-  background: #fff;
-  top: -100px; left: -100px;
-}
-.c2 {
-  width: 300px; height: 300px;
-  background: #ffd6e7;
-  bottom: -80px; right: -60px;
-}
-.c3 {
-  width: 200px; height: 200px;
-  background: #c3f0ff;
-  top: 40%; left: 60%;
-}
+.c1 { width: 400px; height: 400px; background: #fff; top: -100px; left: -100px; }
+.c2 { width: 300px; height: 300px; background: #ffd6e7; bottom: -80px; right: -60px; }
+.c3 { width: 200px; height: 200px; background: #c3f0ff; top: 40%; left: 60%; }
 
-/* 毛玻璃卡片 */
 .glass-card {
   position: relative;
   background: rgba(255, 255, 255, 0.15);
@@ -85,24 +72,24 @@ body {
   width: 100%;
   max-width: 420px;
   text-align: center;
-  box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255,255,255,0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255,255,255,0.4);
 }
 
 .avatar {
-  width: 76px;
-  height: 76px;
-  background: rgba(255, 255, 255, 0.25);
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  overflow: hidden;
   margin: 0 auto 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .name {
